@@ -14,7 +14,7 @@ With this new API, you need to have a basic plan to be able to use this project 
 ## Setup
 - Install Dependencies: `pip install tweepy cryptography Pillow pynput`
 - Configure Credentials:
-  - Replace placeholders in c2_server.py and c2_client.py with your Twitter API credentials.
+  - Replace placeholders in server.py and client.py with your Twitter API credentials.
   - Share the encryption key (key) between server and client.
 # Usage
 - Run Server:
