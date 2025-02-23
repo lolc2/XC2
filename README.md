@@ -1,5 +1,5 @@
 # XC2
-using X (twitter) new API as a C2
+Simple demonstration of using X (twitter) new API as a C2
 
 # Price Limitation
 
